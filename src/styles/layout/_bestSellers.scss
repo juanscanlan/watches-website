@@ -1,0 +1,76 @@
+@import "../abstracts/variables";
+
+.bestSellers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 5rem 10%;
+
+  &__title {
+    font-size: 3.5rem;
+    color: #666;
+    margin-top: 3rem;
+  }
+
+  &__container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 3.5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__double {
+    display: flex;
+    gap: 3.5vw;
+    flex: 1 1 20rem;
+
+    //justify-content: end;
+  }
+
+  &__box {
+    flex: 1 1 20rem;
+    //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    //border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    //border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    //align-items: stretch;
+
+    & img {
+      width: 100%;
+      cursor: pointer;
+      padding: 1rem;
+      flex: 1 0 8rem;
+    }
+  }
+
+  &__description {
+    //align-self: initial;
+    //flex: 0;
+
+    display: flex;
+    flex-direction: column;
+    & h3 {
+      text-align: center;
+      font-size: 1.4rem;
+      //padding: 0 1rem;
+      //margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    & a {
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 1rem;
+      cursor: pointer;
+      color: $font-navy;
+    }
+  }
+}

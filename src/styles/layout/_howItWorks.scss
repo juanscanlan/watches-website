@@ -1,0 +1,42 @@
+@import "../abstracts/variables";
+
+.howItWorks {
+  margin: 5rem 0rem;
+  background: linear-gradient(to bottom, #03181c, #04293a);
+
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    color: $font-white;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 10%;
+  }
+
+  &__box {
+    flex: 1 1 25rem;
+    padding: 1rem;
+    text-align: center;
+
+    & img {
+      width: 15rem;
+      //background-color: #fff;
+      //border-radius: 50%;
+      //border: 1rem solid #fff;
+      //border: double $font-navy;
+      //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    & h3 {
+      font-size: 3rem;
+      font-weight: 200;
+      color: $font-white;
+      padding: 1rem;
+    }
+  }
+}

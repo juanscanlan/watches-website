@@ -1,0 +1,16 @@
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/home";
+@import "layout/dailyDeals";
+@import "layout/mostPopular";
+@import "layout/bestSellers";
+@import "layout/howItWorks";
+@import "layout/reviews";
+@import "layout/contactUs";
+
+@import "layout/body";
