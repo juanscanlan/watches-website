@@ -1,5 +1,4 @@
-import Header from "./components/Layout/Header";
-//import Body from "./components/Layout/Body";
+import Header from "./components/Layout/Header/Header";
 import Home from "./components/Layout/Home";
 import DailyDeals from "./components/Layout/DailyDeals";
 import MostPopular from "./components/Layout/MostPopular";

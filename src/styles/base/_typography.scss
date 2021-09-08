@@ -1,8 +1,8 @@
 @import "../abstracts/variables";
 
 .header {
-  &__title-text,
-  &__navbar a {
+  &__logo-text,
+  &__navitems a {
     font-size: $font-size-title;
     color: $font-white;
   }

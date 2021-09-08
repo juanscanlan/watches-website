@@ -1,5 +1,3 @@
-import rouletteWatch from "../../assets/rouletteWatch.png";
-
 const Home = (props) => {
   return (
     <div className="home">
