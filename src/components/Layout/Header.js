@@ -1,8 +1,11 @@
+import cart from "../../assets/header/cart.png";
+import watch from "../../assets/header/watchIcon.png";
+
 const Header = (props) => {
   return (
     <header className="header">
       <div className="header__title">
-        <i class="far fa-clock header__title-icon"></i>
+        <img className="header__icon" src={watch} alt="" />
         <h1 className="header__title-text">WatchMe</h1>
       </div>
       <nav className="header__navbar">
@@ -13,8 +16,12 @@ const Header = (props) => {
         <a href="#mostPopular">Brands</a>
         <a href="#bestSellers">Best Sellers</a>
         <a href="#reviews">Reviews</a>
-        <a href="#contactUs">Contact Us</a>
-        <i class="fas fa-shopping-cart header__navbar-button"> Cart</i>
+        <a href="#contactUs">Contact</a>
+        <div className="header__navbar-cart">
+          <img src={cart} alt="" />
+          <a>Cart</a>
+          <span>0</span>
+        </div>
       </nav>
     </header>
   );

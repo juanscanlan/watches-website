@@ -7,7 +7,7 @@ import dailyDeal5 from "../../assets/dailyDeal5.jpg";
 const DailyDeals = (props) => {
   return (
     <div className="dailyDeals" id="dailyDeals">
-      <h3 className="dailyDeals__title">Daily Sale</h3>
+      <h3 className="dailyDeals__title">🔥 Daily Sale 🔥</h3>
       <div className="dailyDeals__container">
         <div className="dailyDeals__double">
           <div className="dailyDeals__box">
