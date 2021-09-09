@@ -6,6 +6,7 @@ import BestSellers from "./components/Layout/BestSellers";
 import HowItWorks from "./components/Layout/HowItWorks";
 import Reviews from "./components/Layout/Reviews";
 import ContactUs from "./components/Layout/ContactUs";
+import Footer from "./components/Layout/Footer/Footer";
 
 import { CartProvider } from "./Context/CartContext";
 
@@ -25,9 +26,7 @@ function App() {
       <HowItWorks />
       <Reviews />
       <ContactUs />
-      <br></br>
-      <br></br>
-      <br></br>
+      <Footer />
     </div>
   );
 }
