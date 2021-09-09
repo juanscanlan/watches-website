@@ -1,21 +1,18 @@
-import cart from "../../../assets/header/cart.png";
+import Cart from "./Cart";
 
 const Navitems = (props) => {
+  let openCondition = `${
+    !props.onOpen ? "header__navitems" : "header__navitems active"
+  }`;
   return (
-    <nav className="header__navitems">
-      <a href="#">Home</a>
-      <a className="anchor" href="#dailyDeals">
-        Sale
-      </a>
+    <nav className={openCondition}>
+      <a href="#home">Home</a>
+      <a href="#dailyDeals">Sale</a>
       <a href="#mostPopular">Brands</a>
       <a href="#bestSellers">Best Sellers</a>
       <a href="#reviews">Reviews</a>
       <a href="#contactUs">Contact</a>
-      <div className="header__navitems-cart">
-        <img src={cart} alt="" />
-        <a>Cart</a>
-        <span>0</span>
-      </div>
+      <Cart />
     </nav>
   );
 };

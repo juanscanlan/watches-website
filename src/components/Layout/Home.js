@@ -1,6 +1,6 @@
 const Home = (props) => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home__text">
         <h2 className="home__text-title">High End Watches</h2>
         <p className="home__text-paragraph">
@@ -11,7 +11,7 @@ const Home = (props) => {
           Quisquam Eos!
         </p>
         <a href="#dailyDeals">
-          <button className="home__text-button">Learn More</button>
+          <button className="home__text-button">View Collection</button>
         </a>
       </div>
     </div>

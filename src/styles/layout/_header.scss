@@ -97,19 +97,21 @@
 
 @media screen and (max-width: 980px) {
   .header__navitems {
-    // display: none;
+    //display: none;
+    opacity: 0;
     position: absolute;
     right: 0rem;
     top: 6.4rem;
     height: 100vh;
     background-color: $font-gray;
-    width: 37%;
+    width: 15rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     transform: translateX(100%);
+    transition: transform 0.2s linear;
   }
 
   .header__burger {
@@ -117,6 +119,8 @@
   }
 }
 
-.header__navitems-active {
+.active {
+  opacity: 1;
   transform: translateX(0%);
+  transition: all 0.2s linear;
 }
