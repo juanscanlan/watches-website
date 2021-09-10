@@ -4,6 +4,7 @@ const Navitems = (props) => {
   let openCondition = `${
     !props.onOpen ? "header__navitems" : "header__navitems active"
   }`;
+
   return (
     <nav className={openCondition}>
       <a href="#home">Home</a>
@@ -12,7 +13,7 @@ const Navitems = (props) => {
       <a href="#bestSellers">Best Sellers</a>
       <a href="#reviews">Reviews</a>
       <a href="#contactUs">Contact</a>
-      <Cart />
+      <Cart onClick={props.onClickCart} />
     </nav>
   );
 };

@@ -5,7 +5,7 @@ import review3 from "../../assets/reviews/review3.png";
 const Reviews = (props) => {
   return (
     <div className="reviews" id="reviews">
-      <h3 className="reviews__title">Our Customer Reviews</h3>
+      <h3 className="reviews__title">🥰 Our Customer Reviews 🥰</h3>
       <div className="reviews__container">
         <div className="reviews__box">
           <img src={review1} alt="" />

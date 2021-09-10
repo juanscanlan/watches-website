@@ -3,7 +3,7 @@ import formImage from "../../assets/contactUs/formImage2.jpg";
 const ContactUs = (props) => {
   return (
     <div className="ContactUs" id="contactUs">
-      <h3 className="ContactUs__title">Contact Us</h3>
+      <h3 className="ContactUs__title">✉️ Contact Us ✉️</h3>
       <div className="ContactUs__container">
         <div className="ContactUs__image">
           <img src={formImage} alt="Contact us image" />

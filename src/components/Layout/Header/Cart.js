@@ -6,10 +6,13 @@ import { useContext } from "react";
 
 const Cart = (props) => {
   const [cart, setCart] = useContext(CartContext);
-  console.log(cart);
+
+  const onClickHandler = (event) => {
+    props.onClick();
+  };
 
   return (
-    <div className="header__navitems-cart">
+    <div className="header__navitems-cart" onClick={onClickHandler}>
       <img src={cartImg} alt="Shopping Cart" />
       <a>Cart</a>
       <span>{cart.length}</span>
