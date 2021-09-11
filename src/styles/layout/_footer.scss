@@ -81,6 +81,11 @@
     display: flex;
     flex-direction: column;
 
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+
     & span {
       font-size: 1.4rem;
       cursor: pointer;
@@ -98,11 +103,16 @@
   &__box {
     display: flex;
     flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
     span {
       //border: 1px solid black;
       margin: 0 1rem;
       font-size: 1.4rem;
-      cursor: pointer;
     }
   }
 }

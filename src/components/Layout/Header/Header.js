@@ -3,16 +3,11 @@ import Navitems from "./Navitems";
 import Burger from "./Burger";
 import CartModal from "./CartModal";
 
-import { CartContext } from "../../../Context/CartContext";
-
-import { useState, useContext } from "react";
+import { useState } from "react";
 
 const Header = (props) => {
   const [showBurgerNav, setShowBurgerNav] = useState(false);
   const [openModal, setOpenModal] = useState(false);
-  const [cart, setCart] = useContext(CartContext);
-
-  console.log(cart);
 
   const openBurger = () => {
     setShowBurgerNav((prevState) => !prevState);
