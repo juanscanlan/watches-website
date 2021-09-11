@@ -1,0 +1,19 @@
+<li className="modal__box">
+        <img src={item1} alt="" />
+      <div className="modal__box-item">
+        
+        <div>
+          <h5>{item.name}</h5>
+          <span>{item.description}</span>
+        </div>
+      </div>
+      <div className="modal__box-price">
+        <select name="amountItem" id={item.}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <span>{item.price}</span>
+      </div>
+    </li>

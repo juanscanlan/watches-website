@@ -7,9 +7,12 @@ const DealElement = (props) => {
 
   const addToCart = () => {
     const watch = {
+      id: props.info.id,
       name: props.info.brand,
       description: props.info.description,
-      price: props.info.newPrice,
+      newPrice: props.info.newPrice,
+      oldPrice: props.info.oldPrice,
+      image: props.image,
     };
     setCart((currentState) => [...currentState, watch]);
   };

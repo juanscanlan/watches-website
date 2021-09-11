@@ -1,12 +1,11 @@
 import HeaderLogo from "./HeaderLogo";
 import Navitems from "./Navitems";
 import Burger from "./Burger";
+import CartModal from "./CartModal";
 
 import { CartContext } from "../../../Context/CartContext";
 
 import { useState, useContext } from "react";
-
-import Modal from "react-modal";
 
 const Header = (props) => {
   const [showBurgerNav, setShowBurgerNav] = useState(false);
@@ -28,22 +27,7 @@ const Header = (props) => {
       <HeaderLogo />
       <Navitems onOpen={showBurgerNav} onClickCart={clickCartHandle} />
       <Burger onOpenBurger={openBurger} />
-      <Modal
-        className="modal"
-        isOpen={openModal}
-        onRequestClose={clickCartHandle}
-      >
-        <div className="modal__box">
-          {cart.map((item) => (
-            <div>
-              <div>{item.name}</div>
-              <div>{item.description}</div>
-              <div>${item.price}</div>
-              <br></br>
-            </div>
-          ))}
-        </div>
-      </Modal>
+      <CartModal isOpen={openModal} onRequestClose={clickCartHandle} />
     </header>
   );
 };

@@ -1,5 +1,6 @@
 import Header from "./components/Layout/Header/Header";
 import Home from "./components/Layout/Home";
+import HomeFooter from "./components/Layout/HomeFooter";
 import DailyDeals from "./components/Layout/DailyDeals/DailyDeals";
 import MostPopular from "./components/Layout/MostPopular";
 import BestSellers from "./components/Layout/BestSellers";
@@ -18,7 +19,7 @@ function App() {
       <CartProvider>
         <Header />
         <Home />
-
+        <HomeFooter />
         <DailyDeals />
         <MostPopular />
         <BestSellers />

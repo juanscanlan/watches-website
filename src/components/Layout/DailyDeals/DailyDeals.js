@@ -1,7 +1,7 @@
-import imgDeal0 from "../../../assets/dailyDeal2.jpg";
-import imgDeal1 from "../../../assets/dailyDeal3.jpg";
-import imgDeal2 from "../../../assets/dailyDeal4.jpg";
-import imgDeal3 from "../../../assets/dailyDeal5.jpg";
+import imgDeal0 from "../../../assets/dailyDeals/dailyDeal2.jpg";
+import imgDeal1 from "../../../assets/dailyDeals/dailyDeal3.jpg";
+import imgDeal2 from "../../../assets/dailyDeals/dailyDeal4.jpg";
+import imgDeal3 from "../../../assets/dailyDeals/dailyDeal5.jpg";
 
 import DealElement from "./DealElement";
 
