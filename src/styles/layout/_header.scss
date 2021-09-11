@@ -64,19 +64,24 @@
     margin: -0.2rem;
     margin-left: 1rem;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
     & img {
       width: 5rem;
       font-size: 2rem;
-      margin: -1rem 0 -1.5rem 0rem;
+      margin: -1rem 0;
+      //margin: -1rem 0 -1.5rem 0rem;
       color: #fff;
       //background-color: rgb(91, 135, 170);
       padding: 1rem;
       //border-radius: 5rem;
     }
 
-    a {
+    p {
       color: $font-white;
-      margin-left: 0rem;
+      margin-right: 0.5rem;
+      font-size: 2rem;
     }
 
     & span {
@@ -90,7 +95,7 @@
       align-items: center;
 
       color: $font-white;
-      top: 0.1rem;
+      top: 0.4rem;
       left: 1.9rem;
       border-radius: 50%;
     }

@@ -9,7 +9,7 @@ import Reviews from "./components/Layout/Reviews";
 import ContactUs from "./components/Layout/ContactUs";
 import Footer from "./components/Layout/Footer/Footer";
 
-import { CartProvider } from "./Context/CartContext";
+import { CartProvider } from "./Context/CartProvider";
 
 import "./styles/main.scss";
 

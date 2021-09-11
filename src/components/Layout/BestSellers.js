@@ -17,14 +17,14 @@ const BestSellers = (props) => {
             <img src={bestSeller1} alt="" />
             <div className="bestSellers__description">
               <h3>ROLEX</h3>
-              <a>Submariner</a>
+              <a href="#bestSellers">Submariner</a>
             </div>
           </div>
           <div className="bestSellers__box">
             <img src={bestSeller2} alt="" />
             <div className="bestSellers__description">
               <h3>ROLEX</h3>
-              <a>Daytona</a>
+              <a href="#bestSellers">Daytona</a>
             </div>
           </div>
         </div>
@@ -33,14 +33,14 @@ const BestSellers = (props) => {
             <img src={bestSeller3} alt="" />
             <div className="bestSellers__description">
               <h3>AUDEMARS</h3>
-              <a>RoyalOak</a>
+              <a href="#bestSellers">RoyalOak</a>
             </div>
           </div>
           <div className="bestSellers__box">
             <img src={bestSeller4} alt="" />
             <div className="bestSellers__description">
               <h3>BRIETLING</h3>
-              <a>Navitimer</a>
+              <a href="#bestSellers">Navitimer</a>
             </div>
           </div>
         </div>
@@ -51,14 +51,14 @@ const BestSellers = (props) => {
             <img src={bestSeller5} alt="" />
             <div className="bestSellers__description">
               <h3>ROLEX</h3>
-              <a>Datejust</a>
+              <a href="#bestSellers">Datejust</a>
             </div>
           </div>
           <div className="bestSellers__box">
             <img src={bestSeller6} alt="" />
             <div className="bestSellers__description">
               <h3>ROLEX</h3>
-              <a>DayDate</a>
+              <a href="#bestSellers">DayDate</a>
             </div>
           </div>
         </div>
@@ -67,14 +67,14 @@ const BestSellers = (props) => {
             <img src={bestSeller7} alt="" />
             <div className="bestSellers__description">
               <h3>OMEGA</h3>
-              <a>Seamaster</a>
+              <a href="#bestSellers">Seamaster</a>
             </div>
           </div>
           <div className="bestSellers__box">
             <img src={bestSeller8} alt="" />
             <div className="bestSellers__description">
               <h3>OMEGA</h3>
-              <a>Speedmaster</a>
+              <a href="#bestSellers">Speedmaster</a>
             </div>
           </div>
         </div>

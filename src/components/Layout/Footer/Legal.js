@@ -2,15 +2,15 @@ import React from "react";
 
 function Legal() {
   return (
-    <div className="legal">
+    <div className="legal" id="legal">
       <div className="legal__box">
-        <a>
+        <a href="#legal">
           <span>Terms and Conditions</span>
         </a>
-        <a>
+        <a href="#legal">
           <span>Privacy Policy</span>
         </a>
-        <a>
+        <a href="#legal">
           <span>Careers</span>
         </a>
       </div>

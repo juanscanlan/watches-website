@@ -6,7 +6,7 @@ const ContactUs = (props) => {
       <h3 className="ContactUs__title">✉️ Contact Us ✉️</h3>
       <div className="ContactUs__container">
         <div className="ContactUs__image">
-          <img src={formImage} alt="Contact us image" />
+          <img src={formImage} alt="Contact us" />
         </div>
         <form className="ContactUs__form">
           <div className="ContactUs__inputs">

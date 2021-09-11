@@ -1,5 +1,3 @@
-import item1 from "../../../assets/dailyDeals/dailyDeal2.jpg";
-
 import { useContext } from "react";
 
 import Modal from "react-modal";
@@ -7,41 +5,34 @@ import Modal from "react-modal";
 import { CartContext } from "../../../Context/CartContext";
 
 function CartModal(props) {
-  const [cart, setCart] = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
 
-  const cartTotal = cart.reduce((s, a) => s + a.newPrice, 0);
-
-  let itemCounter = {};
-
-  cart.forEach(function (obj) {
-    var key = JSON.stringify(obj.id);
-    itemCounter[key] = (itemCounter[key] || 0) + 1;
-  });
-  console.log(itemCounter);
-
-  const filteredCart = cart.filter((item) => {});
-
-  const cartItems = cart.map((item) => (
+  const cartItems = cartCtx.items.map((item) => (
     <li className="modal__box">
       <img src={item.image} alt="Cart item" />
       <div className="modal__itemContent">
         <div className="modal__itemContent-name">
           <h5>{item.name}</h5>
-          <span>{item.description}</span>
+          <span>
+            {item.description} {typeof item.amount}
+          </span>
         </div>
         <div className="modal__itemContent-price">
           <select name="amountItem" id={item.id}>
-            <option select={itemCounter[item.id] == 1} value="1">
+            <option selected={item.amount === 1} value="1">
               1
             </option>
-            <option select={itemCounter[item.id] == 2} value="2">
+            <option selected={item.amount === 2} value="2">
               2
             </option>
-            <option select={itemCounter[item.id] == 3} value="3">
+            <option selected={item.amount === 3} value="3">
               3
             </option>
-            <option select={itemCounter[item.id] >= 4} value="4">
+            <option selected={item.amount === 4} value="4">
               4
+            </option>
+            <option selected={item.amount >= 5} value="5">
+              5+
             </option>
           </select>
           <div className="modal__priceDiv">
@@ -59,7 +50,8 @@ function CartModal(props) {
     </div>
   );
 
-  const cartConditionalRender = cart.length === 0 ? emptyCart : cartItems;
+  const cartConditionalRender =
+    cartCtx.items.length === 0 ? emptyCart : cartItems;
 
   return (
     <Modal
@@ -70,16 +62,18 @@ function CartModal(props) {
       <ul className="modal__container">{cartConditionalRender}</ul>
       <div className="modal__total">
         <h4>Total</h4>
-        <span>${cartTotal}</span>
+        <span>${cartCtx.totalAmount.toFixed(2)}</span>
       </div>
       <div className="modal__buttons">
         <button
           className="modal__buttons-cancel"
           onClick={props.onRequestClose}
         >
-          Cancel
+          Close
         </button>
-        <button className="modal__buttons-checkout">Checkout</button>
+        {cartCtx.totalAmount !== 0 && (
+          <button className="modal__buttons-checkout">Checkout</button>
+        )}
       </div>
     </Modal>
   );
