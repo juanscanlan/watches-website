@@ -16,6 +16,8 @@ bower_components
 
 *.sublime*
 
+.eslintcache
+
 psd
 thumb
 sketch
