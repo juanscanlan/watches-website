@@ -103,8 +103,10 @@
 }
 
 @media screen and (max-width: 980px) {
+  .header {
+    padding: 1.5rem;
+  }
   .header__navitems {
-    //display: none;
     opacity: 0;
     position: absolute;
     right: 0rem;
