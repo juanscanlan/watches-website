@@ -9,6 +9,11 @@ Modal.setAppElement("#overlays");
 function CartModal(props) {
   const cartCtx = useContext(CartContext);
 
+  const removeItemHandler = (item) => {
+    cartCtx.removeItem(item);
+    //console.log(item);
+  };
+
   const cartItems = cartCtx.items.map((item) => (
     <li key={item.id} className="modal__box">
       <img src={item.image} alt="Cart item" />
@@ -40,6 +45,13 @@ function CartModal(props) {
           <div className="modal__priceDiv">
             <p className="modal__priceDiv-oldPrice">${item.oldPrice}</p>
             <p className="modal__priceDiv-newPrice">${item.newPrice}</p>
+          </div>
+          <div
+            className="modal__removeItem"
+            value={item.id}
+            onClick={() => removeItemHandler(item.id)}
+          >
+            <i class="fas fa-trash-alt"></i>
           </div>
         </div>
       </div>

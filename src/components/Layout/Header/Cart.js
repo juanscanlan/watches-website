@@ -5,8 +5,6 @@ import { CartContext } from "../../../Context/CartContext";
 import { useContext } from "react";
 
 const Cart = (props) => {
-  //const [cart, setCart] = useContext(CartContext);
-
   const cartCtx = useContext(CartContext);
 
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {

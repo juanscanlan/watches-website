@@ -233,6 +233,12 @@
     }
   }
 
+  &__removeItem {
+    font-size: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+
   &__total {
     display: flex;
     justify-content: space-between;
