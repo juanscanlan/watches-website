@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/watches-website/static/css/main.aea32615.chunk.css",
+    "main.css": "/watches-website/static/css/main.101c17a3.chunk.css",
     "main.js": "/watches-website/static/js/main.08e6aa4d.chunk.js",
     "main.js.map": "/watches-website/static/js/main.08e6aa4d.chunk.js.map",
     "runtime-main.js": "/watches-website/static/js/runtime-main.84200d96.js",
@@ -8,7 +8,7 @@
     "static/js/2.1b821258.chunk.js": "/watches-website/static/js/2.1b821258.chunk.js",
     "static/js/2.1b821258.chunk.js.map": "/watches-website/static/js/2.1b821258.chunk.js.map",
     "index.html": "/watches-website/index.html",
-    "static/css/main.aea32615.chunk.css.map": "/watches-website/static/css/main.aea32615.chunk.css.map",
+    "static/css/main.101c17a3.chunk.css.map": "/watches-website/static/css/main.101c17a3.chunk.css.map",
     "static/js/2.1b821258.chunk.js.LICENSE.txt": "/watches-website/static/js/2.1b821258.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/watches-website/static/media/bannerImage1.dc726251.jpg",
     "static/media/bestSeller1.7cec916c.png": "/watches-website/static/media/bestSeller1.7cec916c.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.84200d96.js",
     "static/js/2.1b821258.chunk.js",
-    "static/css/main.aea32615.chunk.css",
+    "static/css/main.101c17a3.chunk.css",
     "static/js/main.08e6aa4d.chunk.js"
   ]
 }
