@@ -1,9 +1,9 @@
-import popular1 from "../../assets/mostPopular/rolex2.jpg";
-import popular2 from "../../assets/mostPopular/tagHeuer1.jpg";
-import popular3 from "../../assets/mostPopular/omega1.jpg";
-import popular4 from "../../assets/mostPopular/cartier1.jpg";
-import popular5 from "../../assets/mostPopular/grandSeiko1.jpg";
-import popular6 from "../../assets/mostPopular/hermes1.jpg";
+import popular1 from "../../../assets/mostPopular/rolex2.jpg";
+import popular2 from "../../../assets/mostPopular/tagHeuer1.jpg";
+import popular3 from "../../../assets/mostPopular/omega1.jpg";
+import popular4 from "../../../assets/mostPopular/cartier1.jpg";
+import popular5 from "../../../assets/mostPopular/grandSeiko1.jpg";
+import popular6 from "../../../assets/mostPopular/hermes1.jpg";
 
 const MostPopular = (props) => {
   return (
@@ -23,7 +23,6 @@ const MostPopular = (props) => {
           <h3>TAG HEUER </h3>
           <button>Explore Collection</button>
         </div>
-
         <div className="mostPopular__box">
           <img src={popular3} alt="" />
           <h3>OMEGA</h3>

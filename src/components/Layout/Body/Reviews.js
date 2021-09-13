@@ -1,6 +1,6 @@
-import review1 from "../../assets/reviews/review1.png";
-import review2 from "../../assets/reviews/review2.png";
-import review3 from "../../assets/reviews/review3.png";
+import review1 from "../../../assets/reviews/review1.png";
+import review2 from "../../../assets/reviews/review2.png";
+import review3 from "../../../assets/reviews/review3.png";
 
 const Reviews = (props) => {
   return (

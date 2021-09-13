@@ -1,4 +1,4 @@
-import formImage from "../../assets/contactUs/formImage2.jpg";
+import formImage from "../../../assets/contactUs/formImage2.jpg";
 
 const ContactUs = (props) => {
   return (

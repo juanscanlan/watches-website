@@ -1,7 +1,7 @@
-import circle1 from "../../assets/howItWorks/circle1.svg";
-import circle2 from "../../assets/howItWorks/circle2.svg";
-import circle3 from "../../assets/howItWorks/circle3.svg";
-import circle4 from "../../assets/howItWorks/circle4.svg";
+import circle1 from "../../../assets/howItWorks/circle1.svg";
+import circle2 from "../../../assets/howItWorks/circle2.svg";
+import circle3 from "../../../assets/howItWorks/circle3.svg";
+import circle4 from "../../../assets/howItWorks/circle4.svg";
 
 const HowItWorks = (props) => {
   return (

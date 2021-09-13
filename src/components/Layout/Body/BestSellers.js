@@ -1,11 +1,11 @@
-import bestSeller1 from "../../assets/bestSellers/bestSeller1.png";
-import bestSeller2 from "../../assets/bestSellers/bestSeller2.png";
-import bestSeller3 from "../../assets/bestSellers/bestSeller10.png";
-import bestSeller4 from "../../assets/bestSellers/bestSeller4.png";
-import bestSeller5 from "../../assets/bestSellers/bestSeller5.png";
-import bestSeller6 from "../../assets/bestSellers/bestSeller6.png";
-import bestSeller7 from "../../assets/bestSellers/bestSeller7.png";
-import bestSeller8 from "../../assets/bestSellers/bestSeller8.png";
+import bestSeller1 from "../../../assets/bestSellers/bestSeller1.png";
+import bestSeller2 from "../../../assets/bestSellers/bestSeller2.png";
+import bestSeller3 from "../../../assets/bestSellers/bestSeller10.png";
+import bestSeller4 from "../../../assets/bestSellers/bestSeller4.png";
+import bestSeller5 from "../../../assets/bestSellers/bestSeller5.png";
+import bestSeller6 from "../../../assets/bestSellers/bestSeller6.png";
+import bestSeller7 from "../../../assets/bestSellers/bestSeller7.png";
+import bestSeller8 from "../../../assets/bestSellers/bestSeller8.png";
 
 const BestSellers = (props) => {
   return (
