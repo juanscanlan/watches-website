@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, Fragment } from "react";
 
 import Modal from "react-modal";
 
@@ -46,22 +46,9 @@ function CartModal(props) {
     </li>
   ));
 
-  const emptyCart = (
-    <div className="modal__empty">
-      <h4>The cart is empty!</h4>
-    </div>
-  );
-
-  const cartConditionalRender =
-    cartCtx.items.length === 0 ? emptyCart : cartItems;
-
-  return (
-    <Modal
-      className="modal"
-      isOpen={props.isOpen}
-      onRequestClose={props.onRequestClose}
-    >
-      <ul className="modal__container">{cartConditionalRender}</ul>
+  const fullCart = (
+    <Fragment>
+      <ul className="modal__container">{cartItems}</ul>
       <div className="modal__total">
         <h4>Total</h4>
         <span>${cartCtx.totalAmount.toFixed(2)}</span>
@@ -73,10 +60,37 @@ function CartModal(props) {
         >
           Close
         </button>
-        {cartCtx.totalAmount !== 0 && (
-          <button className="modal__buttons-checkout">Checkout</button>
-        )}
+        <button className="modal__buttons-checkout">Checkout</button>
       </div>
+    </Fragment>
+  );
+
+  const emptyCart = (
+    <Fragment>
+      <div className="modal__empty">
+        <h4>The cart is empty!</h4>
+      </div>
+      <div className="modal__buttons">
+        <button
+          className="modal__buttons-cancel"
+          onClick={props.onRequestClose}
+        >
+          Close
+        </button>
+      </div>
+    </Fragment>
+  );
+
+  const cartConditionalRender =
+    cartCtx.items.length === 0 ? emptyCart : fullCart;
+
+  return (
+    <Modal
+      className="modal"
+      isOpen={props.isOpen}
+      onRequestClose={props.onRequestClose}
+    >
+      {cartConditionalRender}
     </Modal>
   );
 }

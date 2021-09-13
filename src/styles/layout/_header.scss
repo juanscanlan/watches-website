@@ -145,6 +145,9 @@
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
 
+  display: flex;
+  flex-direction: column;
+
   &__container {
     height: 80%;
 
@@ -233,6 +236,8 @@
   &__total {
     display: flex;
     justify-content: space-between;
+
+    // border-top: 1px solid black;
 
     h4,
     span {
