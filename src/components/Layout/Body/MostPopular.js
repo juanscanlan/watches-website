@@ -8,7 +8,7 @@ import popular6 from "../../../assets/mostPopular/hermes1.jpg";
 const MostPopular = (props) => {
   return (
     <div className="mostPopular" id="mostPopular">
-      <h3 className="mostPopular__title">⌚ Most Popular Brands ⌚</h3>
+      <h3 className="mostPopular__title">⌚ Top Brands ⌚</h3>
       <a className="mostPopular__allBrands" href="index.html">
         View All Brands {">"}
       </a>

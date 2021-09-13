@@ -10,7 +10,7 @@ import bestSeller8 from "../../../assets/bestSellers/bestSeller8.png";
 const BestSellers = (props) => {
   return (
     <div className="bestSellers" id="bestSellers">
-      <h3 className="bestSellers__title">🎉 Best Selling Models 🎉</h3>
+      <h3 className="bestSellers__title">🎉 Best Sellers 🎉</h3>
       <div className="bestSellers__container">
         <div className="bestSellers__double">
           <div className="bestSellers__box">
