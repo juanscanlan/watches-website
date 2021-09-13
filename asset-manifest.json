@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/watches-website/static/css/main.77f3e18f.chunk.css",
-    "main.js": "/watches-website/static/js/main.ad60bf53.chunk.js",
-    "main.js.map": "/watches-website/static/js/main.ad60bf53.chunk.js.map",
+    "main.css": "/watches-website/static/css/main.aea32615.chunk.css",
+    "main.js": "/watches-website/static/js/main.08e6aa4d.chunk.js",
+    "main.js.map": "/watches-website/static/js/main.08e6aa4d.chunk.js.map",
     "runtime-main.js": "/watches-website/static/js/runtime-main.84200d96.js",
     "runtime-main.js.map": "/watches-website/static/js/runtime-main.84200d96.js.map",
-    "static/js/2.4a796a6a.chunk.js": "/watches-website/static/js/2.4a796a6a.chunk.js",
-    "static/js/2.4a796a6a.chunk.js.map": "/watches-website/static/js/2.4a796a6a.chunk.js.map",
+    "static/js/2.1b821258.chunk.js": "/watches-website/static/js/2.1b821258.chunk.js",
+    "static/js/2.1b821258.chunk.js.map": "/watches-website/static/js/2.1b821258.chunk.js.map",
     "index.html": "/watches-website/index.html",
-    "static/css/main.77f3e18f.chunk.css.map": "/watches-website/static/css/main.77f3e18f.chunk.css.map",
-    "static/js/2.4a796a6a.chunk.js.LICENSE.txt": "/watches-website/static/js/2.4a796a6a.chunk.js.LICENSE.txt",
+    "static/css/main.aea32615.chunk.css.map": "/watches-website/static/css/main.aea32615.chunk.css.map",
+    "static/js/2.1b821258.chunk.js.LICENSE.txt": "/watches-website/static/js/2.1b821258.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/watches-website/static/media/bannerImage1.dc726251.jpg",
     "static/media/bestSeller1.7cec916c.png": "/watches-website/static/media/bestSeller1.7cec916c.png",
     "static/media/bestSeller2.e7a37811.png": "/watches-website/static/media/bestSeller2.e7a37811.png",
@@ -39,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.84200d96.js",
-    "static/js/2.4a796a6a.chunk.js",
-    "static/css/main.77f3e18f.chunk.css",
-    "static/js/main.ad60bf53.chunk.js"
+    "static/js/2.1b821258.chunk.js",
+    "static/css/main.aea32615.chunk.css",
+    "static/js/main.08e6aa4d.chunk.js"
   ]
 }
