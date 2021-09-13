@@ -4,11 +4,13 @@ import Modal from "react-modal";
 
 import { CartContext } from "../../../Context/CartContext";
 
+Modal.setAppElement("#overlays");
+
 function CartModal(props) {
   const cartCtx = useContext(CartContext);
 
   const cartItems = cartCtx.items.map((item) => (
-    <li className="modal__box">
+    <li key={item.id} className="modal__box">
       <img src={item.image} alt="Cart item" />
       <div className="modal__itemContent">
         <div className="modal__itemContent-name">

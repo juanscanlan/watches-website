@@ -14,7 +14,7 @@ const BestSellers = (props) => {
       <div className="bestSellers__container">
         <div className="bestSellers__double">
           <div className="bestSellers__box">
-            <img src={bestSeller1} alt="" />
+            <img src={bestSeller1} alt="Best seller 1" />
             <div className="bestSellers__description">
               <h3>ROLEX</h3>
               <a href="#bestSellers">Submariner</a>
