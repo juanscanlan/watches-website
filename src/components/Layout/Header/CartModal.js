@@ -11,7 +11,6 @@ function CartModal(props) {
 
   const removeItemHandler = (item) => {
     cartCtx.removeItem(item);
-    //console.log(item);
   };
 
   const cartItems = cartCtx.items.map((item) => (
