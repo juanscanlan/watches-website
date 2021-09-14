@@ -11,7 +11,7 @@ Link to live site: https://juanscanlan.github.io/watches-website/
 <br clear="left"/>
   
 ## Preview: Shopping Cart Demo
-  (Open image in new tab for more clarity)
+  (Open image in new tab for more clarity)<br>
 <img src="./readmeImages/CartDemo.gif" width=500px>
 
 ## Preview: Full Site
