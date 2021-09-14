@@ -1,4 +1,4 @@
-# Front-End E-commerce store for Watches
+# Front-end E-commerce store for selling watches
 Link to live site: https://juanscanlan.github.io/watches-website/
 
 <b>Languages and Tools used:<b><br>
