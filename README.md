@@ -1,4 +1,4 @@
-# Front-end E-commerce store for selling watches
+# ⌚ Front-end E-commerce store for selling watches ⌚
 Link to live site: https://juanscanlan.github.io/watches-website/
 
 <b>Languages and Tools used:<b><br>
@@ -10,9 +10,9 @@ Link to live site: https://juanscanlan.github.io/watches-website/
   <img alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 <br clear="left"/>
   
-## Preview: Shopping Cart Demo
+## 🛒 Preview: Shopping Cart Demo 🛒
   (Open image in new tab for more clarity)<br>
 <img src="./readmeImages/CartDemo.gif" width=500px>
 
-## Preview: Full Site
+## 📄 Preview: Full Site 📄
 <img src="./readmeImages/WatchMe-entirePage.png" width=500px>
