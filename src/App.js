@@ -9,6 +9,8 @@ import Reviews from "./components/Layout/Body/Reviews";
 import ContactUs from "./components/Layout/Body/ContactUs";
 import Footer from "./components/Layout/Footer/Footer";
 
+import Stocks from "./components/Stocks/Stocks";
+
 import { CartProvider } from "./Context/CartProvider";
 
 import "./styles/main.scss";
@@ -24,6 +26,7 @@ function App() {
         <MostPopular />
         <BestSellers />
       </CartProvider>
+      <Stocks />
       <HowItWorks />
       <Reviews />
       <ContactUs />
