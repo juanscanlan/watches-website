@@ -1,13 +1,10 @@
-import Header from "./components/Layout/Header/Header";
-import Home from "./components/Layout/Body/Home";
-import HomeFooter from "./components/Layout/Body/HomeFooter";
-import DailyDeals from "./components/Layout/Body/DailyDeals/DailyDeals";
-import MostPopular from "./components/Layout/Body/MostPopular";
-import BestSellers from "./components/Layout/Body/BestSellers";
-import HowItWorks from "./components/Layout/Body/HowItWorks";
-import Reviews from "./components/Layout/Body/Reviews";
-import ContactUs from "./components/Layout/Body/ContactUs";
-import Footer from "./components/Layout/Footer/Footer";
+import { Route } from "react-router-dom";
+
+import Header from "./components/Home/Header/Header";
+
+import Welcome from "./pages/Welcome";
+import SellWatch from "./pages/SellWatch";
+import AuthForm from "./components/Auth/AuthForm";
 
 import { CartProvider } from "./Context/CartProvider";
 
@@ -18,16 +15,18 @@ function App() {
     <div>
       <CartProvider>
         <Header />
-        <Home />
-        <HomeFooter />
-        <DailyDeals />
-        <MostPopular />
-        <BestSellers />
+        <main>
+          <Route path="/index">
+            <Welcome />
+          </Route>
+          <Route path="/SellWatch">
+            <SellWatch />
+          </Route>
+          <Route path="/auth">
+            <AuthForm />
+          </Route>
+        </main>
       </CartProvider>
-      <HowItWorks />
-      <Reviews />
-      <ContactUs />
-      <Footer />
     </div>
   );
 }
