@@ -1,0 +1,53 @@
+@import "../../styles/abstracts/variables";
+
+.sellWatch {
+  margin-top: $header-height;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 50rem;
+
+  // background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  //   url(../../assets/sellWatch/watchBanner.jpg);
+  // url(../../assets/mostPopular/seamless/seamless2.jpg);
+  // url(../../assets/seamlessFlowers.jpg);
+  //background-size: 30rem;
+  //background-repeat: repeat;
+  background-image: url(../../assets/sellWatch/watchBanner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+
+    margin: 5rem;
+  }
+}
+
+.brand {
+  h3 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+
+.model {
+  h3 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}

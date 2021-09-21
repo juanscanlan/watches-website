@@ -28,19 +28,17 @@ function Stocks() {
 
   const getStocks = (companyName) => {
     let API_KEY = "D2V18KYMWOP2UBBQ";
-    // let companyName = company;
     let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${companyName}&outputsize=compact&apikey=${API_KEY}`;
 
     fetch(API_CALL)
       .then((response) => {
-        console.log(response);
         return response.json();
       })
       .then((data) => {
         let dailyData = data["Time Series (Daily)"];
         let prices = [];
-        let dates = []; // Object.keys(dailyData).reverse();
-        console.log(data);
+        let dates = [];
+
         for (let day in dailyData) {
           prices.unshift(dailyData[day]["1. open"]);
           dates.unshift(day);
@@ -62,7 +60,6 @@ function Stocks() {
     setCompanyTitle(
       event.nativeEvent.target[event.nativeEvent.target.selectedIndex].text
     );
-    //getStocks();
   };
 
   return (

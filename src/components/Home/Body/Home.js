@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = (props) => {
   return (
     <div className="home" id="home">
@@ -11,8 +13,11 @@ const Home = (props) => {
           Quisquam Eos!
         </p>
         <a href="#dailyDeals">
-          <button className="home__text-button">View Collection</button>
+          <button className="home__text-button">Buy a Watch</button>
         </a>
+        <button className="home__text-button">
+          <Link to="/SellWatch">Sell a Watch</Link>
+        </button>
       </div>
     </div>
   );
