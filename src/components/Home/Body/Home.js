@@ -15,9 +15,10 @@ const Home = (props) => {
         <a href="#dailyDeals">
           <button className="home__text-button">Buy a Watch</button>
         </a>
-        <button className="home__text-button">
-          <Link to="/SellWatch">Sell a Watch</Link>
-        </button>
+
+        <Link to="/SellWatch">
+          <button className="home__text-button">Sell a Watch</button>
+        </Link>
       </div>
     </div>
   );

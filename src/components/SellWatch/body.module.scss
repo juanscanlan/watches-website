@@ -1,53 +1,90 @@
 @import "../../styles/abstracts/variables";
 
 .sellWatch {
-  margin-top: $header-height;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // margin-top: $header-height;
+  // padding: 5rem;
+  // text-align: center;
 
-  height: 50rem;
+  // height: 30rem;
 
-  // background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-  //   url(../../assets/sellWatch/watchBanner.jpg);
-  // url(../../assets/mostPopular/seamless/seamless2.jpg);
-  // url(../../assets/seamlessFlowers.jpg);
-  //background-size: 30rem;
-  //background-repeat: repeat;
-  background-image: url(../../assets/sellWatch/watchBanner.jpg);
-  background-size: cover;
-  background-position: center;
+  // // background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  // //   url(../../assets/sellWatch/watchBanner.jpg);
+  // // url(../../assets/mostPopular/seamless/seamless2.jpg);
+  // // url(../../assets/seamlessFlowers.jpg);
+  // //background-size: 30rem;
+  // //background-repeat: repeat;
+  // background-image: url(../../assets/sellWatch/watchBanner.jpg);
+  // background-size: cover;
+  // background-position: center;
 
-  h1 {
-    font-size: 5rem;
-    font-weight: 300;
-    color: #fff;
-  }
+  // h1 {
+  //   font-size: 5rem;
+  //   font-weight: 300;
+  //   color: #fff;
+  //   margin-top: 5rem;
+  // }
 
   &__container {
     display: flex;
-    align-items: flex-end;
-    gap: 1.5rem;
+    flex-wrap: wrap;
 
-    margin: 5rem;
+    width: 80%;
+
+    margin: 8rem auto;
+    background-color: #fff;
   }
 }
 
-.brand {
-  h3 {
-    font-size: 1.5rem;
-    color: #fff;
+.personalInfo {
+  background-color: azure;
+  text-align: left;
+
+  flex: 1;
+  padding: 2rem 2rem;
+
+  h2 {
+    border-bottom: 1px solid #9b8e83;
   }
 
-  select {
+  &__name,
+  &__email {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 0.5rem 2rem;
+
+    span {
+      font-size: 1.4rem;
+    }
   }
 }
 
-.model {
-  h3 {
-    font-size: 1.5rem;
-    color: #fff;
+.watchInfo {
+  background-color: azure;
+  text-align: left;
+
+  flex: 1;
+  padding: 2rem 2rem;
+
+  h2 {
+    border-bottom: 1px solid #9b8e83;
+  }
+
+  &__brand,
+  &__model,
+  &__age {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 2rem;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    text-align: right;
+    margin-right: 2rem;
   }
 }

@@ -23,7 +23,6 @@ function Welcome() {
       <HowItWorks />
       <Reviews />
       <ContactUs />
-      <Footer />
     </div>
   );
 }

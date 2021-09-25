@@ -4,7 +4,11 @@ import classes from "./AuthForm.module.css";
 
 import AuthContext from "../../Context/AuthContext";
 
-const AuthForm = () => {
+require("dotenv").config();
+
+const AuthForm = (props) => {
+  //const targetPage = props.targetPage;
+
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
 
@@ -24,11 +28,9 @@ const AuthForm = () => {
 
     let url;
     if (isLogin) {
-      url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJfLGSZ60KJX58asQv8_NYnOLTBzZaxs";
+      url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.REACT_APP_API_KEY}`;
     } else {
-      url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJfLGSZ60KJX58asQv8_NYnOLTBzZaxs";
+      url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_API_KEY}`;
     }
     fetch(url, {
       method: "POST",
@@ -56,7 +58,9 @@ const AuthForm = () => {
         }
       })
       .then((data) => {
-        authCtx.login(data.idToken);
+        authCtx.login(data);
+        //authCtx.email(data.email);
+        // console.log(data);
       })
       .catch((err) => {
         alert(err.message);

@@ -1,0 +1,26 @@
+@import "../../styles/abstracts/variables";
+
+.banner {
+  margin-top: $header-height;
+  padding: 5rem;
+  text-align: center;
+
+  height: 30rem;
+
+  // background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  //   url(../../assets/sellWatch/watchBanner.jpg);
+  // url(../../assets/mostPopular/seamless/seamless2.jpg);
+  // url(../../assets/seamlessFlowers.jpg);
+  //background-size: 30rem;
+  //background-repeat: repeat;
+  background-image: url(../../assets/sellWatch/watchBanner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 5rem;
+  }
+}

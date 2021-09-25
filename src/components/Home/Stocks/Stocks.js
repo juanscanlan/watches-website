@@ -64,7 +64,7 @@ function Stocks() {
 
   return (
     <div className="stocks">
-      <button onClick={getStocks}>Get Stocks</button>
+      {/* <button onClick={getStocks}>Get Stocks</button>
       <button onClick={findCompany}>Find Company</button>
       <button
         onClick={() => {
@@ -72,7 +72,7 @@ function Stocks() {
         }}
       >
         Show state
-      </button>
+      </button> */}
       <div className="stocks__header">
         <h3 className="stocks__title">Daily Stock Prices</h3>
         <div className="stocks__header-top">
