@@ -28,7 +28,7 @@ const Navitems = (props) => {
       <a href="#reviews">Reviews</a>
       <a href="#contactUs">Contact</a> */}
       {!isLoggedIn && <Link to="/auth">Login</Link>}
-      {isLoggedIn && <Link to="/auth">Profile</Link>}
+      {isLoggedIn && <Link to="/Profile">Profile</Link>}
       {isLoggedIn && (
         <Link to="/" onClick={loggoutHandler}>
           Logout

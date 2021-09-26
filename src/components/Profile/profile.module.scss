@@ -1,0 +1,23 @@
+@import "../../styles/abstracts/variables";
+
+.profile {
+  margin-top: $header-height;
+
+  min-height: 50vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  &__main {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+  }
+
+  &__addListing {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}

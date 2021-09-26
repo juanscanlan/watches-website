@@ -1,25 +1,18 @@
 import body from "./body.module.scss";
 
-import { useState, useContext, useEffect, useRef } from "react";
-import AuthContext from "../../Context/AuthContext";
+import { useState, useEffect, useRef } from "react";
 
 import db from "../Firebase/Firebase";
-import {
-  doc,
-  getDoc,
-  addDoc,
-  onSnapshot,
-  collection,
-  query,
-  where,
-} from "firebase/firestore";
+import { doc, setDoc, onSnapshot, collection, query } from "firebase/firestore";
+
+import { useHistory } from "react-router-dom";
 
 function SellWatchForm() {
+  let history = useHistory();
+
   const formRef = useRef();
 
   const [watches, setWatches] = useState([]);
-
-  const authCtx = useContext(AuthContext);
 
   const email = localStorage.getItem("email");
 
@@ -32,36 +25,54 @@ function SellWatchForm() {
       });
       setWatches(watchesToSell);
     });
-    console.log(watches);
+    //console.log(watches);
   }, []);
 
-  const addWatch = async (name, phone, brand, model, age) => {
-    const docRef = await addDoc(collection(db, "users", email, "sell"), {
+  const addWatch = async (name, phone, brand, model, age, id) => {
+    const docRef = await setDoc(doc(db, "users", email, "sell", id), {
       Name: name,
       Phone: phone,
       Brand: brand,
       Model: model,
       Age: age,
+      id: id,
     });
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
+    let currentdate = new Date();
+    let datetime =
+      currentdate.getDate() +
+      "." +
+      (currentdate.getMonth() + 1) +
+      "." +
+      currentdate.getFullYear() +
+      "-" +
+      currentdate.getHours() +
+      ":" +
+      currentdate.getMinutes() +
+      ":" +
+      currentdate.getSeconds();
+
     let addWatchName = formRef.current["personalName"].value;
     let addWatchPhone = formRef.current["personalPhone"].value;
     let addWatchBrand = formRef.current["watchBrand"].value;
     let addWatchModel = formRef.current["watchModel"].value;
     let addWatchAge = formRef.current["watchAge"].value;
+    let addWatchId = datetime;
 
     addWatch(
       addWatchName,
       addWatchPhone,
       addWatchBrand,
       addWatchModel,
-      addWatchAge
+      addWatchAge,
+      addWatchId
     );
+
+    history.push("/Profile");
   };
-  console.log(watches);
 
   return (
     <form
@@ -109,7 +120,7 @@ function SellWatchForm() {
           </div>
         </div>
         <div className={body.watchInfo__model}>
-          <span>Model Number</span>
+          <span>Model</span>
           <input type="text" name="watchModel" placeholder="Eg: E75469" />
         </div>
         <div className={body.watchInfo__age}>

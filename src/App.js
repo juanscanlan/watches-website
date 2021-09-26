@@ -7,6 +7,7 @@ import Footer from "./components/Home/Footer/Footer";
 import Welcome from "./pages/Welcome";
 import SellWatch from "./pages/SellWatch";
 import AuthForm from "./components/Auth/AuthForm";
+import Profile from "./components/Profile/Profile";
 
 import { CartProvider } from "./Context/CartProvider";
 
@@ -35,7 +36,15 @@ function App() {
                 <AuthForm targetPage="SellWatch" />
               </Route>
             )}
-
+            {authCtx.isLoggedIn ? (
+              <Route path="/Profile">
+                <Profile />
+              </Route>
+            ) : (
+              <Route path="/auth">
+                <AuthForm />
+              </Route>
+            )}
             {!authCtx.isLoggedIn && (
               <Route path="/auth">
                 <AuthForm />
