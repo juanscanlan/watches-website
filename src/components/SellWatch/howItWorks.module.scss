@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
 
-    width: 20rem;
+    width: 30rem;
     padding: 1rem;
 
     i {
@@ -40,6 +40,11 @@
       font-weight: 700;
       color: $font-navy;
       padding: 1rem;
+    }
+
+    span {
+      text-align: center;
+      font-size: 1.4rem;
     }
   }
 }

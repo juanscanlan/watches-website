@@ -120,7 +120,7 @@ function SellWatchForm() {
         </div>
         <div className={body.watchInfo__model}>
           <span>Model</span>
-          <input type="text" name="watchModel" placeholder="Eg: E75469" />
+          <input type="text" name="watchModel" placeholder="Eg: Submariner" />
         </div>
         <div className={body.watchInfo__age}>
           <span>Approximate Age of Watch (Years)</span>
