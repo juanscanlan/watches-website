@@ -26,7 +26,7 @@ Link to live site: https://juanscanlan.github.io/watches-website/
 <img src="./readmeImages/LoginEntirePage.png" width=500px>
   
 ## 📄 Preview: SellWatch Page 📄
-<img src="./readmeImages/WatchMe-entirePage.png" width=500px>
+<img src="./readmeImages/SellWatchEntirePage.png" width=500px>
   
 ## 📄 Preview: Profile Page 📄
 <img src="./readmeImages/ProfileEntirePage.png" width=500px>
