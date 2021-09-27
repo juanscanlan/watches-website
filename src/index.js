@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 //import db from "./components/Firebase/Firebase";
 
@@ -8,9 +8,9 @@ import { AuthContextProvider } from "./Context/AuthContext";
 
 ReactDOM.render(
   <AuthContextProvider>
-    <BrowserRouter>
+    <HashRouter basename="/">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </AuthContextProvider>,
   document.getElementById("root")
 );
