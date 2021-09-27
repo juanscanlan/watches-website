@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/watches-website/static/css/main.dfd5b5b3.chunk.css",
-    "main.js": "/watches-website/static/js/main.cf820b0c.chunk.js",
-    "main.js.map": "/watches-website/static/js/main.cf820b0c.chunk.js.map",
+    "main.js": "/watches-website/static/js/main.8df15e26.chunk.js",
+    "main.js.map": "/watches-website/static/js/main.8df15e26.chunk.js.map",
     "runtime-main.js": "/watches-website/static/js/runtime-main.84200d96.js",
     "runtime-main.js.map": "/watches-website/static/js/runtime-main.84200d96.js.map",
     "static/js/2.e8337f90.chunk.js": "/watches-website/static/js/2.e8337f90.chunk.js",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.84200d96.js",
     "static/js/2.e8337f90.chunk.js",
     "static/css/main.dfd5b5b3.chunk.css",
-    "static/js/main.cf820b0c.chunk.js"
+    "static/js/main.8df15e26.chunk.js"
   ]
 }
