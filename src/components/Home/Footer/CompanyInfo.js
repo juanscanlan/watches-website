@@ -36,18 +36,18 @@ function CompanyInfo() {
     <div className="companyInfo__box">
       <h4>{column.title}</h4>
       <div className="companyInfo__content">
-        <a href="#companyInfo">
-          <span>{column.line1}</span>
-        </a>
-        <a href="#companyInfo">
-          <span>{column.line2}</span>
-        </a>
-        <a href="#companyInfo">
-          <span>{column.line3}</span>
-        </a>
-        <a href="#companyInfo">
-          <span>{column.line4}</span>
-        </a>
+        <span>
+          <a href="#companyInfo">{column.line1}</a>
+        </span>
+        <span>
+          <a href="#companyInfo">{column.line2}</a>
+        </span>
+        <span>
+          <a href="#companyInfo">{column.line3}</a>
+        </span>
+        <span>
+          <a href="#companyInfo">{column.line4}</a>
+        </span>
       </div>
     </div>
   );

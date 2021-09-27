@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
+//import db from "./components/Firebase/Firebase";
+
 import App from "./App";
 import { AuthContextProvider } from "./Context/AuthContext";
 

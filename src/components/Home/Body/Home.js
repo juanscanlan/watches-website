@@ -6,18 +6,17 @@ const Home = (props) => {
       <div className="home__text">
         <h2 className="home__text-title">High End Watches</h2>
         <p className="home__text-paragraph">
-          Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.<br></br>
-          Voluptas Accusamus Tempore Temporibus Rem Amet Laudantium Animi Optio
-          Voluptatum.<br></br>
-          Natus Obcaecati Unde Porro Nostrum Ipsam Itaque Impedit Incidunt Rem
-          Quisquam Eos!
+          Explore our collection of the most popular watches in the world.
+          <br></br>
+          Sell your own watches to our large collection of users.
         </p>
         <a href="#dailyDeals">
-          <button className="home__text-button">Buy a Watch</button>
+          <button className="home__text-buttonBuy">Buy a Watch</button>
         </a>
-        <button className="home__text-button">
-          <Link to="/SellWatch">Sell a Watch</Link>
-        </button>
+
+        <Link to="/SellWatch">
+          <button className="home__text-buttonSell">Sell a Watch</button>
+        </Link>
       </div>
     </div>
   );

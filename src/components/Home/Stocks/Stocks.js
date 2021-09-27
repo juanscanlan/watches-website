@@ -8,24 +8,6 @@ function Stocks() {
   const [x_values, setX_values] = useState([]);
   const [y_values, setY_values] = useState([]);
 
-  const findCompany = () => {
-    let API_KEY = "D2V18KYMWOP2UBBQ";
-    let companyName = "MOVADO";
-    let API_SEARCH = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${companyName}&apikey=${API_KEY}`;
-
-    fetch(API_SEARCH)
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
-
   const getStocks = (companyName) => {
     let API_KEY = "D2V18KYMWOP2UBBQ";
     let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${companyName}&outputsize=compact&apikey=${API_KEY}`;
@@ -64,15 +46,6 @@ function Stocks() {
 
   return (
     <div className="stocks">
-      <button onClick={getStocks}>Get Stocks</button>
-      <button onClick={findCompany}>Find Company</button>
-      <button
-        onClick={() => {
-          console.log(x_values);
-        }}
-      >
-        Show state
-      </button>
       <div className="stocks__header">
         <h3 className="stocks__title">Daily Stock Prices</h3>
         <div className="stocks__header-top">

@@ -32,9 +32,13 @@
       text-shadow: black 0rem 0.2rem 0.2rem;
     }
 
-    &-button {
+    &-buttonBuy {
       @include mainButton;
       //background-color: transparent;
+    }
+
+    &-buttonSell {
+      @include mainButton(#fff, black);
     }
   }
 

@@ -17,7 +17,7 @@
   align-items: center;
 
   &__icon {
-    width: 5rem;
+    width: 4rem;
   }
 
   &__logo {
@@ -26,15 +26,13 @@
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 
-    &-icon {
-      font-size: 3rem;
-      color: #fff;
-
-      margin: 0rem 1rem;
-    }
-
     &-text {
       padding: 0rem 1rem;
+    }
+
+    &-textMobile {
+      padding: 0rem 1rem;
+      display: none;
     }
   }
 
@@ -47,7 +45,18 @@
       background-color: #fff;
       margin: 0.5rem;
     }
+
+    i {
+      font-size: 2.4rem;
+      color: #fff;
+      margin: 0 0.7rem;
+    }
   }
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
 }
 
 .header__navitems {
@@ -102,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 650px) {
   .header {
     padding: 1.5rem;
   }
@@ -125,6 +134,15 @@
 
   .header__burger {
     display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__logo-text {
+    display: none;
+  }
+  .header__logo-textMobile {
+    display: initial;
   }
 }
 

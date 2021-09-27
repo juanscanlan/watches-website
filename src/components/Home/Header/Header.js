@@ -1,17 +1,18 @@
 import HeaderLogo from "./HeaderLogo";
 import Navitems from "./Navitems";
-import Burger from "./Burger";
+import Cart from "./Cart";
+import MobileNav from "./MobileNav";
 import CartModal from "./CartModal";
 
 import { useState } from "react";
 
 const Header = (props) => {
-  const [showBurgerNav, setShowBurgerNav] = useState(false);
+  //const [showBurgerNav, setShowBurgerNav] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  const openBurger = () => {
-    setShowBurgerNav((prevState) => !prevState);
-  };
+  // const openBurger = () => {
+  //   setShowBurgerNav((prevState) => !prevState);
+  // };
 
   const clickCartHandle = () => {
     setOpenModal((prevState) => !prevState);
@@ -20,8 +21,12 @@ const Header = (props) => {
   return (
     <header className="header">
       <HeaderLogo />
-      <Navitems onOpen={showBurgerNav} onClickCart={clickCartHandle} />
-      <Burger onOpenBurger={openBurger} />
+      <div className="navContainer">
+        <Navitems />
+        <MobileNav />
+        <Cart onClick={clickCartHandle} />
+      </div>
+
       <CartModal isOpen={openModal} onRequestClose={clickCartHandle} />
     </header>
   );
