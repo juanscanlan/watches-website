@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/watches-website/static/css/main.4f759c28.chunk.css",
-    "main.js": "/watches-website/static/js/main.006e0c6c.chunk.js",
-    "main.js.map": "/watches-website/static/js/main.006e0c6c.chunk.js.map",
+    "main.css": "/watches-website/static/css/main.dfd5b5b3.chunk.css",
+    "main.js": "/watches-website/static/js/main.3999a6a4.chunk.js",
+    "main.js.map": "/watches-website/static/js/main.3999a6a4.chunk.js.map",
     "runtime-main.js": "/watches-website/static/js/runtime-main.84200d96.js",
     "runtime-main.js.map": "/watches-website/static/js/runtime-main.84200d96.js.map",
-    "static/js/2.b1ac7ed7.chunk.js": "/watches-website/static/js/2.b1ac7ed7.chunk.js",
-    "static/js/2.b1ac7ed7.chunk.js.map": "/watches-website/static/js/2.b1ac7ed7.chunk.js.map",
+    "static/js/2.ca3ddfda.chunk.js": "/watches-website/static/js/2.ca3ddfda.chunk.js",
+    "static/js/2.ca3ddfda.chunk.js.map": "/watches-website/static/js/2.ca3ddfda.chunk.js.map",
     "index.html": "/watches-website/index.html",
-    "static/css/main.4f759c28.chunk.css.map": "/watches-website/static/css/main.4f759c28.chunk.css.map",
-    "static/js/2.b1ac7ed7.chunk.js.LICENSE.txt": "/watches-website/static/js/2.b1ac7ed7.chunk.js.LICENSE.txt",
+    "static/css/main.dfd5b5b3.chunk.css.map": "/watches-website/static/css/main.dfd5b5b3.chunk.css.map",
+    "static/js/2.ca3ddfda.chunk.js.LICENSE.txt": "/watches-website/static/js/2.ca3ddfda.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/watches-website/static/media/bannerImage1.dc726251.jpg",
     "static/media/bestSeller1.7cec916c.png": "/watches-website/static/media/bestSeller1.7cec916c.png",
     "static/media/bestSeller2.e7a37811.png": "/watches-website/static/media/bestSeller2.e7a37811.png",
@@ -35,13 +35,12 @@
     "static/media/review3.d6f21c94.png": "/watches-website/static/media/review3.d6f21c94.png",
     "static/media/rolex2.d3b79fbf.jpg": "/watches-website/static/media/rolex2.d3b79fbf.jpg",
     "static/media/tagHeuer1.c6a1020c.jpg": "/watches-website/static/media/tagHeuer1.c6a1020c.jpg",
-    "static/media/body.module.scss": "/watches-website/static/media/watchBanner.40385a04.jpg",
-    "static/media/watchIcon.b09faf04.png": "/watches-website/static/media/watchIcon.b09faf04.png"
+    "static/media/banner.module.scss": "/watches-website/static/media/watchBanner.40385a04.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.84200d96.js",
-    "static/js/2.b1ac7ed7.chunk.js",
-    "static/css/main.4f759c28.chunk.css",
-    "static/js/main.006e0c6c.chunk.js"
+    "static/js/2.ca3ddfda.chunk.js",
+    "static/css/main.dfd5b5b3.chunk.css",
+    "static/js/main.3999a6a4.chunk.js"
   ]
 }
