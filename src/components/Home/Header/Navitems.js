@@ -1,5 +1,3 @@
-import Cart from "./Cart";
-
 import { useContext } from "react";
 
 import AuthContext from "../../../Context/AuthContext";
@@ -21,12 +19,6 @@ const Navitems = (props) => {
 
   return (
     <nav className={openCondition}>
-      {/* <a href="#home">Home</a>
-      <a href="#dailyDeals">Sale</a>
-      <a href="#mostPopular">Brands</a>
-      <a href="#bestSellers">Best Sellers</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contactUs">Contact</a> */}
       {!isLoggedIn && <Link to="/auth">Login</Link>}
       {isLoggedIn && <Link to="/Profile">Profile</Link>}
       {isLoggedIn && (
@@ -35,7 +27,7 @@ const Navitems = (props) => {
         </Link>
       )}
 
-      <Cart onClick={props.onClickCart} />
+      {/* <Cart onClick={props.onClickCart} /> */}
     </nav>
   );
 };

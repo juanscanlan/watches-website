@@ -25,7 +25,6 @@ function SellWatchForm() {
       });
       setWatches(watchesToSell);
     });
-    //console.log(watches);
   }, []);
 
   const addWatch = async (name, phone, brand, model, age, id) => {

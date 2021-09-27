@@ -59,8 +59,6 @@ const AuthForm = (props) => {
       })
       .then((data) => {
         authCtx.login(data);
-        //authCtx.email(data.email);
-        // console.log(data);
       })
       .catch((err) => {
         alert(err.message);

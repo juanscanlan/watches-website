@@ -1,0 +1,16 @@
+@import "../../styles/abstracts/variables";
+
+.demoHeader {
+  margin-top: $header-height + 5rem;
+
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 1.4rem;
+  }
+}

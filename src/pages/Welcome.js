@@ -6,7 +6,6 @@ import BestSellers from "../components/Home/Body/BestSellers";
 import HowItWorks from "../components/Home/Body/HowItWorks";
 import Reviews from "../components/Home/Body/Reviews";
 import ContactUs from "../components/Home/Body/ContactUs";
-import Footer from "../components/Home/Footer/Footer";
 
 import Stocks from "../components/Home/Stocks/Stocks";
 

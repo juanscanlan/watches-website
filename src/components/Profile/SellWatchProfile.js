@@ -19,14 +19,17 @@ function SellWatchProfile() {
   const email = localStorage.getItem("email");
 
   useEffect(() => {
-    let q = query(collection(db, "users", email, "sell"));
-    let watchSnapshot = onSnapshot(q, (querySnapshot) => {
-      let watchesToSell = [];
-      querySnapshot.forEach((watch) => {
-        watchesToSell.push(watch.data());
+    const getWatchList = (email) => {
+      let q = query(collection(db, "users", email, "sell"));
+      let watchSnapshot = onSnapshot(q, (querySnapshot) => {
+        let watchesToSell = [];
+        querySnapshot.forEach((watch) => {
+          watchesToSell.push(watch.data());
+        });
+        setWatches(watchesToSell);
       });
-      setWatches(watchesToSell);
-    });
+    };
+    getWatchList(email);
   }, []);
 
   const deleteWatch = async (id) => {
@@ -47,7 +50,7 @@ function SellWatchProfile() {
   );
 
   const firebaseSell = watches.map((watch) => (
-    <div className={styles.sellWatch}>
+    <div className={styles.sellWatch} key={watch.id}>
       <h2>Watch Information</h2>
       <div className={styles.container}>
         <div className={styles.box}>
