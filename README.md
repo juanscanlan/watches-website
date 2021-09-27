@@ -1,4 +1,4 @@
-# ⌚ Front-end E-commerce store for selling watches ⌚
+# ⌚ SPA Watch website with Firebase database ⌚
 Link to live site: https://juanscanlan.github.io/watches-website/
 
 <b>Languages and Tools used:<b><br>
@@ -15,6 +15,18 @@ Link to live site: https://juanscanlan.github.io/watches-website/
 ## 🛒 Preview: Shopping Cart Demo 🛒
   (Open image in new tab for more clarity)<br>
 <img src="./readmeImages/CartDemo.gif" width=500px>
+  
+## 🗺️ Site Map 🗺️
+<img src="./readmeImages/SiteMap.jpg" width=500px>
 
-## 📄 Preview: Full Site 📄
+## 📄 Preview: Home Page 📄
 <img src="./readmeImages/WatchMe-entirePage.png" width=500px>
+
+## 📄 Preview: Login Page 📄
+<img src="./readmeImages/LoginEntirePage.png" width=500px>
+  
+## 📄 Preview: SellWatch Page 📄
+<img src="./readmeImages/WatchMe-entirePage.png" width=500px>
+  
+## 📄 Preview: Profile Page 📄
+<img src="./readmeImages/ProfileEntirePage.png" width=500px>
