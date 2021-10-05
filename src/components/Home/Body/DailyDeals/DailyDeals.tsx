@@ -5,7 +5,7 @@ import imgDeal3 from "../../../../assets/dailyDeals/dailyDeal5.jpg";
 
 import DealElement from "./DealElement";
 
-const DailyDeals = (props) => {
+const DailyDeals = () => {
   const DUMMY_DEALS = [
     {
       id: "1",

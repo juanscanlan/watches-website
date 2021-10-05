@@ -6,13 +6,8 @@ import CartModal from "./CartModal";
 
 import { useState } from "react";
 
-const Header = (props) => {
-  //const [showBurgerNav, setShowBurgerNav] = useState(false);
+const Header = () => {
   const [openModal, setOpenModal] = useState(false);
-
-  // const openBurger = () => {
-  //   setShowBurgerNav((prevState) => !prevState);
-  // };
 
   const clickCartHandle = () => {
     setOpenModal((prevState) => !prevState);

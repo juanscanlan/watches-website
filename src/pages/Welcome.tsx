@@ -15,7 +15,6 @@ function Welcome() {
       <Home />
       <HomeFooter />
       <DailyDeals />
-
       <MostPopular />
       <BestSellers />
       <Stocks />

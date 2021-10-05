@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import Header from "./components/Home/Header/Header";
-import Footer from "./components/Home/Footer/Footer";
+import Header from "./components/Home/Header/Header.tsx";
+import Footer from "./components/Home/Footer/Footer.tsx";
 
-import Welcome from "./pages/Welcome";
+import Welcome from "./pages/Welcome.tsx";
 import SellWatch from "./pages/SellWatch";
 import Auth from "./pages/Auth";
 import Profile from "./components/Profile/Profile";

@@ -7,7 +7,7 @@ import bestSeller6 from "../../../assets/bestSellers/bestSeller6.png";
 import bestSeller7 from "../../../assets/bestSellers/bestSeller7.png";
 import bestSeller8 from "../../../assets/bestSellers/bestSeller8.png";
 
-const BestSellers = (props) => {
+const BestSellers = () => {
   return (
     <div className="bestSellers" id="bestSellers">
       <h3 className="bestSellers__title">🎉 Best Sellers 🎉</h3>

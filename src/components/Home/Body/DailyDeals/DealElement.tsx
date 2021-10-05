@@ -2,7 +2,19 @@ import { useContext } from "react";
 
 import { CartContext } from "../../../../Context/CartContext";
 
-const DealElement = (props) => {
+type DealProps = {
+  key: string;
+  image: string;
+  info: {
+    id: string;
+    brand: string;
+    description: string;
+    newPrice: number;
+    oldPrice: number;
+  };
+};
+
+const DealElement: React.FunctionComponent<DealProps> = (props: DealProps) => {
   const cartCtx = useContext(CartContext);
 
   const addToCartHandler = () => {

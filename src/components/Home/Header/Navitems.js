@@ -26,8 +26,6 @@ const Navitems = (props) => {
           Logout
         </Link>
       )}
-
-      {/* <Cart onClick={props.onClickCart} /> */}
     </nav>
   );
 };

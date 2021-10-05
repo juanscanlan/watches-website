@@ -1,5 +1,3 @@
-import React from "react";
-
 function CompanyInfo() {
   const companyInfoData = [
     {
@@ -32,7 +30,8 @@ function CompanyInfo() {
     },
   ];
 
-  const columnJSX = (column) => (
+  //Type fix
+  const columnJSX = (column: any) => (
     <div className="companyInfo__box">
       <h4>{column.title}</h4>
       <div className="companyInfo__content">

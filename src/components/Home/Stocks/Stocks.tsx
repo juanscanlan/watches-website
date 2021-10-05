@@ -5,10 +5,11 @@ import { useState, useEffect } from "react";
 function Stocks() {
   const [company, setCompany] = useState("AAPL");
   const [companyTitle, setCompanyTitle] = useState("Apple Inc");
-  const [x_values, setX_values] = useState([]);
-  const [y_values, setY_values] = useState([]);
+  const [x_values, setX_values] = useState<string[]>([]);
 
-  const getStocks = (companyName) => {
+  const [y_values, setY_values] = useState<any>([]);
+
+  const getStocks = (companyName: string) => {
     let API_KEY = "D2V18KYMWOP2UBBQ";
     let API_CALL = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${companyName}&outputsize=compact&apikey=${API_KEY}`;
 
@@ -18,8 +19,8 @@ function Stocks() {
       })
       .then((data) => {
         let dailyData = data["Time Series (Daily)"];
-        let prices = [];
-        let dates = [];
+        let prices: string[] = [];
+        let dates: string[] = [];
 
         for (let day in dailyData) {
           prices.unshift(dailyData[day]["1. open"]);
@@ -37,7 +38,7 @@ function Stocks() {
     getStocks(company);
   }, [company]);
 
-  const onSelectCompanyHandler = (event) => {
+  const onSelectCompanyHandler = (event: any) => {
     setCompany(event.target.value);
     setCompanyTitle(
       event.nativeEvent.target[event.nativeEvent.target.selectedIndex].text
@@ -75,7 +76,9 @@ function Stocks() {
             options={{
               maintainAspectRatio: false,
               plugins: {
-                legend: false,
+                legend: {
+                  display: false,
+                },
               },
               scales: {
                 xAxis: {

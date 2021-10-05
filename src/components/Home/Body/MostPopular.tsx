@@ -5,7 +5,7 @@ import popular4 from "../../../assets/mostPopular/cartier1.jpg";
 import popular5 from "../../../assets/mostPopular/grandSeiko1.jpg";
 import popular6 from "../../../assets/mostPopular/hermes1.jpg";
 
-const MostPopular = (props) => {
+const MostPopular = () => {
   return (
     <div className="mostPopular" id="mostPopular">
       <h3 className="mostPopular__title">⌚ Top Brands ⌚</h3>

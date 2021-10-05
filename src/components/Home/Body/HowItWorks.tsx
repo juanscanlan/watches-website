@@ -3,7 +3,7 @@ import circle2 from "../../../assets/howItWorks/circle2.svg";
 import circle3 from "../../../assets/howItWorks/circle3.svg";
 import circle4 from "../../../assets/howItWorks/circle4.svg";
 
-const HowItWorks = (props) => {
+const HowItWorks = () => {
   return (
     <div className="howItWorks">
       <h3 className="howItWorks__title">How It Works</h3>
