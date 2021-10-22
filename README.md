@@ -1,4 +1,4 @@
-# ⌚ React.js: SPA Watch website with Firebase database ⌚
+# ⌚ React.js: SPA Watch website with Firebase database
 Link to live site: https://juanscanlan.github.io/watches-website/
 
 <b>Languages and Tools used:<b><br>
